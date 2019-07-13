@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections;
 
 [System.Serializable]
-public struct Point : IEquatable<Point>
+public struct Point
 {
     #region Fields
     public int x;
@@ -38,11 +37,6 @@ public struct Point : IEquatable<Point>
     {
         return !(a == b);
     }
-
-    public static implicit operator Vector2(Point p)
-    {
-        return new Vector2(p.x, p.y);
-    }
     #endregion
 
     #region Object Overloads
@@ -72,4 +66,3 @@ public struct Point : IEquatable<Point>
     }
     #endregion
 }
-
