@@ -8,7 +8,7 @@ MonoImporter:
       type: 3}
   - tileSelectionIndicatorPrefab: {fileID: 7281894279517078051, guid: 6a6ce8d7a07428046aa8e17574fe8611,
       type: 3}
-  - levelData: {instanceID: 0}
+  - levelData: {fileID: 11400000, guid: 0cbf86bf55d1fde45835dcacaaf13eaa, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
