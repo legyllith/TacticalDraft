@@ -1,7 +1,6 @@
 ﻿
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UIElements;
 using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
