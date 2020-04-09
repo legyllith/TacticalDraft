@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class WaveSpawner : MonoBehaviour
     private float timeBetweenWaves = 5f;
 
     [SerializeField]
-    private TextElement  waveCountdownTimer;
+    private Text  waveCountdownTimer;
 
     private float countdown = 2f; // temps avant le début des vagues
 
@@ -32,7 +33,7 @@ public class WaveSpawner : MonoBehaviour
         }
 
         countdown -= Time.deltaTime; // retire petit a petit du temps
-        waveCountdownTimer.text = Mathf.Floor(countdown).ToString();
+        waveCountdownTimer.text = "Procahine vagues :\n" + Mathf.Round(countdown).ToString() + " sec";
     }
 
     IEnumerator SpawnWave()// fait apparraitre des vague
